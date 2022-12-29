@@ -81,6 +81,77 @@ Ajhai bujnu vayena? Chinta nalinuhos yedi tapaile `#include <stdio.h>` le kasari
 - Line 7 ma lekhiyeko `return 0;` le chai main function lai close or end garxa.
 - Line 8 ma chai curly bracket close gareko xaum hamle ekchoti bracket open garepaxi teslai compulsory close garnai parxa.
 
+# C Output 
+Aaba hamle kei kura or value print garna paryo vane hamle `printf()` function:
+
+```C
+#include <stdio.h>
+
+int main(){
+    printf("Orphic");
+    return 0;
+}
+```
+Output:`Orphic`
+
+Hamle jati pani `printf()` use garna pauxa.
+```C
+#include <stdio.h>
+
+int main(){
+    printf("Orphic");
+    printf("Rethink, Recode!");
+    return 0;
+}
+```
+Output: `OrphicRethink, Recode!`
+
+Tapaile Note garna parne kura chai k ho vaney printf le print matra garxa naya line ma print garaudaina.
+
+Naya printf() ko content lai naya line ma print garuna last ma `\n` use garna parxa.
+
+```C
+#include <stdio.h>
+
+int main(){
+    printf("Orphic\n");
+    printf("Rethink, Recode!");
+    return 0;
+}
+```
+Output: 
+```
+Orphic
+Rethink, Recode!
+```
+Hamle `\n` character use garesi tala ko printf ko content naya line ma print vayo.
+
+# Comments in C
+Simply, Tapaile tapai ko sathi ko photo ma comment garnu hunxa ni testai ho yesma ni comments use garera certain block of code lai explain garna or remainder ko lagi use garinxa.
+
+ - Singled-Lined Comments (//)
+ - Multi-Lined Comments (/*   */)
+
+ Aaba hami yo mathi comment character lai hamro code ma use garxaum.
+
+ ```
+ #include <stdio.h>
+
+ int main(){
+// this is single line comment
+/* this is
+multi-line comments
+*/
+     printf("Hello World!");
+     return 0;
+ }
+ ```
+ Output:`Hello World!`
+
+Hamle Comments ma lekheko kura haru lai compiler le purai ignore garxa.
+
+
+
 
 
 
