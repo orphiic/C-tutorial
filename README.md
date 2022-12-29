@@ -65,6 +65,22 @@ Yeso aaba tapai le vharkhar lekhnu vako code ko 1st line ma hernus ta tapaile:
 
 `#include <stdio.h>` lekhnu vako xa yo line le stdio.h vanne file lai tapai ko program ma include garauxa stdio vaneko chai `standard input/output` arthat yo file ko help bata tapai le aafno lekhiyeko code ma input ra output lina ra dina paunu hunxa.
 
+For Example: 
+
+Mathi `Line 5` ma `printf()` lekhnu vako xa yo function le Output diney kaam garxa, jastai tapai le mathi printf ko bracket vhitra Hello World! Lekhnu vako thiyo.
+
+Teslai `printf()` vanne function le print garera output ma Hello World! dekhaidiyo.
+
+Ajhai bujnu vayena? Chinta nalinuhos yedi tapaile `#include <stdio.h>` le kasari  kaam garxa vanera bujnu vayeko xaina vane, yeslai kehi euta chiz (something) ko rupp ma linu hos laagbaag tapaile lekhnu vako hareko program haru ma use hunxa.
+
+
+- Aaba line 3 ma hernuhos arko kura jun jaile tapaile leknu vako c program ma dekha parxa `main()`. Yeslai chai main function vaninxa tapaile `{}` curly bracket vhitra lekhnu vayeko code lai compiler le execute garxa or execute hunxa.
+- Line 5 ma `printf()` function xa jun chai screen ma output dina lai use hunxa, jastai mathi ko code ma `Hello World!`.
+
+- Important kura C code ko statement chai jaile semicolon `;` le end garxa.
+- Line 7 ma lekhiyeko `return 0;` le chai main function lai close or end garxa.
+- Line 8 ma chai curly bracket close gareko xaum hamle ekchoti bracket open garepaxi teslai compulsory close garnai parxa.
+
 
 
 
