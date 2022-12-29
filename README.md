@@ -82,7 +82,7 @@ Ajhai bujnu vayena? Chinta nalinuhos yedi tapaile `#include <stdio.h>` le kasari
 - Line 8 ma chai curly bracket close gareko xaum hamle ekchoti bracket open garepaxi teslai compulsory close garnai parxa.
 
 # C Output 
-Aaba hamle kei kura or value print garna paryo vane hamle `printf()` function:
+Aaba hamle kei kura or value print garna paryo vane hamle `printf()` function use garxaum:
 
 ```C
 #include <stdio.h>
