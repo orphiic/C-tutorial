@@ -151,6 +151,147 @@ multi-line comments
 Hamle Comments ma lekheko kura haru lai compiler le purai ignore garxa.
 
 
+# C Variables
+Variables vaneko chai euta container ho euta vada ho jasma chai kei data haru store hunxa.
+Sochnus tapai snga euta glass xa ni tyo glass ma pani:
+`glass = water` vanesi Variable vaneko chai glass ho jasle chai water vanne value carry garirako xa tyo value tapaile piuna lai use garna milxa.
+
+Tesai gari hamle programming ma Variable kunai pani data store garney ani paxi hamle kunai function or mathmatical logic ma use garna milxa.
+
+C ma chai diffrent types on variable hunxa (datatype declare gareko anusar le tapai ko variable le value carry garxa)
+- int: numeric value or whole number store garxa jastai: `123`, `-123`.
+- float: floating point or decimal value store garxa, `15.65` or `-35.65`.
+- char: yesle chai single character haru store garxa jastai `a` or `A`.
+
+## Declaring Variables
+Hamle variables declare garna vanda paila types specify garna parxa.
+
+`type variableName = value;`
+
+where `type` ma datatype rakhne (jastai int jasle number carry garxa) ani `variableName` ma (jastai x or number int value store garna lai) `=` vaneko chai tapai ko variable ko value assign garna lai.
+
+Aaba chai hami variable  banauxau jasko  data type `int` hunxa  ani naam `number` hunxa tespaxi tesko value `10` vanera assign garxaum haita:
+
+`int number = 10;`
+
+hamle value binaa declare garna ni milxa jastai:
+
+`int number;`
+
+yo garda chai paxi hamle user bata value lina parxa ani number vanne variable ma store garna parxa yo kura hami arko part ma sikxau.
+
+Aaba hamle tyo number vako 10 value lai print garna parxa tara tapai haru le euta kura bujna parxa:
+
+Aru programming language haru ma variable ko value print garna lai direct print() vanne function ko bracket vhitra varibale ko naam haldina:
+
+```python
+num = 10
+
+print(num)
+```
+
+Tara c language ma chai yesari kei pani print hudaina. Print garauna lai hamle fomat specifiers use garna parney hunxa.
+
+So, aaba hami paila format specifiers ko barema halka herxau.
+
+# Format specifiers
+
+Format Specifiers chai hamle printf() function use garxaum kina garxaum vhanda, compiler lai variable vhitra store gariyeko data type ko barema bujauna lai.
+
+Format Specifiers chai `%` yo sign le start hunxa.
+
+For example, aagi hami le lekheko program `int num = 10` ma variable le `int` matlab integer value carry gareko xa. Aaba tyo integer lai print garna lai hamle `%d` or `%i` use garnu parney hunxa.
+
+```C
+#include <stdio.h>
+
+int main(){
+
+    int num = 10;
+
+    printf("%d", num);
+
+    return 0;
+
+}
+```
+Output: `10`
+
+```
+Note:
+- int ko format specifiers %d ra %i ho.
+- flaot ko format specifiers %f ho.
+- char ko fomat specifiers chai %c ho.
+```
+Tala ko program ma hami sabai format specifiers use garera value print garxaum haita.
+
+```C
+#include <stdio.h>
+
+int main(){
+
+    int num = 10;
+    float num_1 = 23.55;
+    char name = 'S';
+
+    printf("%d", num);
+    printf("%f", num_1);
+    printf("%c", name);
+
+    return 0;
+
+}
+```
+
+Output:
+```
+10
+23.55
+S
+```
+Text ra variable ko value combine garna printf function vhitra comma le seprate garna parxa.
+jastai:
+
+```C
+#include <stdio.h>
+
+int main() {
+  int num = 15;
+  printf("Number: %d", num);
+  return 0;
+}
+```
+Output:`Number: 15`
+
+## General rules for naming Variables
+- Tapai le declare garnu vako variable le letter, digits ani underscore matra hunapauxa.
+- variable name jaile underscore or underscore le start garna parney hunxa.
+- variable name haru case sensitive hunxa `num` ra `Num` xuttai xuttai variable ko roop ma chinxa c language le.
+- aani variable name ma chai kaile whitespaces or special character jastai: !, #, %, etc use garna paidaina.
+- C ma reserved vayeko naam jastai:`int, char, etc` haru pani use garna paidaina.
+
+# Data types
+
+Aagi vaneko jastai C language ma variable ma data type specify garna parxa ani sang sangai format specifiers ni print garne bela.
+
+## Basic Datatypes
+Data type le chai variable ma store vayeko information ko size ra type lai specify garxa.
+
+Hami yo tutorial ma chai basic datatype haru ma focus garxaum:
+
+```
+- int : yesle whole number haru store garxa ra yesko size vaneko 2 or 4 bytes ko hunxa.
+- float : 6 decimal digits value store garxa ani yesko size vaneko 4 bytes ko hunxa.
+- double: 15 decimal digits value store garxa ani yesko size chai 8 bytes ko hunxa.
+- char : yesle chai single character, letter, number, or ascii values store garxa ra yesko size vaneko chai 1 byte  ko hunxa.
+```
+## Format Specifiers
+- int: `%d` or `%i`.
+- float: `%f`
+- double: `%lf`
+- char: `%c`
+- string: `%s`
+
 
 
 
